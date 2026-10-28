@@ -1,0 +1,16 @@
+{
+  "name": "mindlock",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "apps/admin",
+    "apps/extension"
+  ],
+  "scripts": {
+    "dev:admin": "npm --workspace apps/admin run dev",
+    "build:admin": "npm --workspace apps/admin run build",
+    "dev:extension": "npm --workspace apps/extension run dev",
+    "build:extension": "npm --workspace apps/extension run build",
+    "lint:admin": "npm --workspace apps/admin run lint"
+  }
+}
